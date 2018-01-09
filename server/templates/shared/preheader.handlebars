@@ -1,0 +1,51 @@
+
+<tr>
+    <td align="center" valign="top" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+        <!-- BEGIN PREHEADER // -->
+        <table border="0" cellpadding="0" cellspacing="0" width="600" id="templatePreheader" style="{{style.preheader}} background-color: #B5B5B5;">
+			<tr>
+				<td valign="top" class="preheaderContainer" style="padding-top:9px;">
+					<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock">
+						<tbody class="mcnTextBlockOuter">
+							<tr>
+								<td valign="top" class="mcnTextBlockInner">
+
+									<table align="left" border="0" cellpadding="0" cellspacing="0" width="300" class="mcnTextContentContainer">
+										<tbody>
+											<tr>
+												<td valign="top" class="mcnTextContent" style="padding-top:9px; padding-left:18px; padding-bottom:9px; padding-right:0;">
+													{{{subject}}}
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<table align="right" border="0" cellpadding="0" cellspacing="0" width="300" class="mcnTextContentContainer">
+										<tbody>
+											<tr>
+												<td valign="top" class="mcnTextContent" style="padding-top:9px; padding-right:18px; padding-bottom:9px; padding-left:0;text-align:right;">
+													{{#if preheaderPhone}}
+														{{#if companyTelephone}}
+															<span style="margin-right: 5px;">&#128222; :: <a href="callto:{{companyTelephone}}">{{companyTelephone}}</a></span>
+														{{/if}}
+													{{/if}}
+													{{#if preheaderEmail}}
+														{{#if companyEmail}}
+															<span>&#64; :: <a href="mailto:{{companyEmail}}">{{companyEmail}}</a></span>
+														{{/if}}
+													{{/if}}
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</table>
+        <!-- // END PREHEADER -->
+    </td>
+</tr>
