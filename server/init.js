@@ -38,16 +38,19 @@ PrettyEmail = {
     },
     defaults: {
         verifyEmail: {
+            subject : 'Activate Your Account',
             heading: 'Just one more step...',
             message: 'Click on the big button below to activate your account',
             buttonText: 'Activate account'
         },
         resetPassword: {
+            subject: 'Reset Your Password',
             heading: 'Reset your password',
             message: 'Click the big button below to reset your password',
             buttonText: 'Reset password'
         },
         enrollAccount: {
+            subject: 'Finish Your Enrollment',
             heading: 'To start using our service, simply click the button below',
             buttonText: 'Set password'
         }
@@ -127,7 +130,7 @@ if(!_.isUndefined(Accounts)){
   
     Accounts.emailTemplates.verifyEmail.subject = function(user){
         
-        return 'Activate your account';
+        return PrettyEmail.defaults.verifyEmail.subject;
    
     };
 
@@ -144,7 +147,7 @@ if(!_.isUndefined(Accounts)){
 
     Accounts.emailTemplates.resetPassword.subject = function(user){
         
-        return 'Reset your password';
+        return PrettyEmail.defaults.resetPassword.subject;
    
     };
 
@@ -161,7 +164,7 @@ if(!_.isUndefined(Accounts)){
 
     Accounts.emailTemplates.enrollAccount.subject = function(user){
         
-        return 'An account has been created for you';
+        return PrettyEmail.defaults.enrollAccount.subject;
    
     };
 
